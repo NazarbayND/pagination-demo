@@ -1,0 +1,39 @@
+.pagination-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+
+  .pages-list {
+    display: flex;
+    gap: 4px;
+  }
+
+  .ellipsis {
+    align-self: end;
+  }
+
+  button {
+    padding: 4px 8px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    outline: none;
+    color: #242424;
+
+    &:focus {
+      outline: 2px solid royalblue;
+    }
+
+    &.active {
+      background-color: #007bff;
+      color: #fff;
+      border-color: #007bff;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+  }
+}
